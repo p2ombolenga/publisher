@@ -42,7 +42,7 @@ INSTALLED_APPS = [
     'blog',
 ]
 
-# AUTH_USER_MODEL = 'blog.User'
+AUTH_USER_MODEL = 'blog.User'
 
 MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
