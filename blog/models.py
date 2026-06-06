@@ -15,7 +15,7 @@ class Post(models.Model):
 
     author = models.ForeignKey(User, on_delete=models.CASCADE, related_name='posts')
     title = models.CharField(max_length=255)
-    slug = models.SlugField(unique=True)
+    slug = models.SlugField(unique=True, max_length=255)
     content = models.TextField()
     cover_image = models.ImageField(upload_to='covers/', blank=True)
     tags = models.ManyToManyField(Tag, blank=True)
